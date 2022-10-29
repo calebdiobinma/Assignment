@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: blueviolet;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  place-items: center;
+  height: 100vh;
+}
+main{
+  display: grid;
+  grid-template-areas:
+    a a a b b
+    a a a b b
+    c c d d d
+    c c e e e;
+  gap: 10px;
+}
+main div{
+  padding: 2em;
+  text-align: center;
+}
+.a{
+  background-color: #f20202;
+  grid-area: a;
+}
+.b{
+  background-color: #ffaf1a;
+  grid-area: b;
+  }
+.c{
+  background-color: green;
+  grid-area: c;
+  }
+.d{
+  background-color:skyblue ;
+  grid-area: d;
+}
+.e{
+  background-color:skyblue ;
+  grid-area: e;
+}
